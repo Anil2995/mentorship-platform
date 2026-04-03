@@ -2,8 +2,9 @@ import { login } from '@/app/auth/actions'
 import Link from 'next/link'
 import { Zap } from 'lucide-react'
 
-export default function LoginPage({ searchParams }: { searchParams: { message?: string } }) {
-  const errorMessage = searchParams?.message
+export default async function LoginPage({ searchParams }: { searchParams: Promise<{ message?: string }> }) {
+  const resolvedParams = await searchParams
+  const errorMessage = resolvedParams?.message
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] flex">
