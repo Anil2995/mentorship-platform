@@ -54,6 +54,15 @@ graph TD
   C -.- |Signaling| A2
 ```
 
+## 🧪 Demo Credentials
+
+For quick testing without signing up, you can use the following demo accounts (ensure you create these via the Signup page first):
+
+| Role | Email | Password |
+|---|---|---|
+| **Mentor** | `mentor@demo.com` | `password123` |
+| **Student** | `student@demo.com` | `password123` |
+
 ---
 
 ## 🚀 Getting Started
