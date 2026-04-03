@@ -102,7 +102,7 @@ io.on('connection', (socket) => {
   });
 });
 
-app.get('/', (req, res) => {
+app.get('/', (req: express.Request, res: express.Response) => {
   res.send('Mentorship Platform Backend is running!');
 });
 
